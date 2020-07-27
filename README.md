@@ -38,5 +38,11 @@ firebase backend (firestore).
 - Firebase
 - Svelte
 - Run sapper as firebase function
-  
+
+# License
+
+EUPL v. 1.2
+
+see [LICENSE](./LICENSE)
+
 [1] Not sure about this one, actually. Didn't do any research.
