@@ -1,10 +1,10 @@
-import sirv from 'sirv';
-import polka from 'polka';
-import compression from 'compression';
-import * as sapper from '@sapper/server';
+import sirv from 'sirv'
+import polka from 'polka'
+import compression from 'compression'
+import * as sapper from '@sapper/server'
 
-const { PORT, NODE_ENV } = process.env;
-const dev = NODE_ENV === 'development';
+const { PORT, NODE_ENV } = process.env
+const dev = NODE_ENV === 'development'
 
 if (dev) {
   polka() // You can also use Express
@@ -14,8 +14,8 @@ if (dev) {
       sapper.middleware()
     )
     .listen(PORT, err => {
-      if (err) console.log('error', err);
-    });
+      if (err) console.log('error', err)
+    })
 }
 
-export { sapper };
+export { sapper }
